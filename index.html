@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger Landing Page - Tailwind CSS - Nur Nabi Khan</title>
+    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="stylesheet" href="/src/style.css">
+</head>
+<!-- 
+
+npx @tailwindcss/cli -i ./src/input.css -o ./dist/output.css --watch
+
+-->
+
+<body>
+
+    <!-- Nav Bar -->
+    <header class="w-[100%] flex justify-end items-center">
+        <nav class="flex p-[20px] justify-center gap-[45vw] sm:justify-end items-center sm:gap-3 w-[80%] fixed top-0">
+
+            <div>
+                <!-- Menu Bar -->
+                <button class="text-white sm:hidden text-xl" id="open-btn">&#9776;</button>
+
+                <!-- Nav Links -->
+                <ul class="text-white sm:flex gap-[50px] hidden">
+                    <li class="home-btn duration-700"> Home</li>
+                    <li class="about-btn duration-700"> About</li>
+                    <li class="menu-btn duration-700"> Menu</li>
+                    <li class="contact-btn duration-700">Contact</li>
+                </ul>
+            </div>
+
+            <!-- Nav Logo -->
+            <img src="/images/logo.png" alt="logo" class="h-[100px]">
+        </nav>
+    </header>
+
+
+    <!-- Side Bar -->
+    <div class="sidebar z-10 bg-black p-[80px] text-center absolute top-0 " id="sidebar">
+        <!-- Nav Links -->
+        <ul class="text-white flex flex-col gap-[50px]">
+            <button id="close-btn">x</button>
+            <li class="home-btn">Home</li>
+            <li class="about-btn">About</li>
+            <li class="menu-btn"> Menu</li>
+            <li class="contact-btn">Contact</li>
+        </ul>
+    </div>
+
+    <br> <br> <br> <br> <br>
+
+
+    <!-- Hero Section -->
+    <section class="w-[100%] flex justify-center items-center hero-section" id="home">
+        <div>
+            <div class="flex-col lg:flex-row flex justify-center items-center gap-[80px] p-[20px]">
+
+                <!-- Image -->
+                <div class="hero-img-card">
+                    <!-- Contact -->
+                    <div
+                        class="flex justify-center items-center gap-3 bg-[#008600] w-[200px] p-2 rounded-[10px] rounded-br-[40%] mt-[350px]">
+                        <img src="/images/phone-logo.svg" alt="Contact" class="h-[25px]">
+                        <p class="text-white">+(123)456789</p>
+                    </div>
+                </div>
+
+                <!-- About of Hero -->
+                <div class="text-white ">
+                    <!-- Heading -->
+                    <h1 class="font-black text-6xl md:text-8xl">The Only <br>
+                        Burger Place <br>
+                        You'll Love!
+                    </h1>
+                    <br>
+                    <!-- Heading 2 -->
+                    <h2 class="text-2xl  underline text-amber-300">Healthy Burger With Low Calories</h2>
+                    <br>
+                    <!-- Paragraph -->
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore,<br> impedit dolor, cum
+                        repudiandae odit, neque alias ratione voluptas error <br>quia modi sint saepe asperiores enim
+                        minus sequi fugiat soluta minima.</p>
+                    <br>
+                    <!-- Buttons -->
+                    <div class="text-white flex gap-5 flex-wrap">
+                        <a href="#"><button class="bg-[#008600] px-9 py-2 rounded-2xl duration-1000">Order
+                                Now</button></a>
+                        <a href="#"><button
+                                class="bg-transparent px-9 py-2 rounded-2xl border-1 border-white duration-1000">Read
+                                more</button></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <br> <br> <br> <br>
+
+    <!-- About Section -->
+    <section class="w-[100%] flex justify-center items-center about-section" id="about-section">
+        <div>
+            <div class="flex flex-col lg:flex-row justify-center items-center gap-[100px] p-3 text-white">
+                <!-- About -->
+                <div>
+                    <!-- Heading -->
+                    <h1 class="font-bold text-6xl">About Us</h1> <br>
+                    <!-- Paragarph of about -->
+                    <p class="opacity-90">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, <br>
+                        accusantium! Excepturi quasi adipisci provident porro numquam expedita cum <br>commodi vitae
+                        aspernatur illo. Expedita ipsam repudiandae consequuntur <br> adipisci consectetur,
+                        reprehenderit minima? <br>
+                        Eveniet laboriosam pariatur nisi? Qui ex nam commodi ratione, accusamus </p>
+
+                    <br>
+                    <!-- Button -->
+                    <a href="#"><button class="bg-[#008600] px-9 py-2 rounded-2xl duration-1000">Lesrn
+                            More!</button></a>
+                </div>
+
+                <!-- Image -->
+                <img src="/images/about-section-burger.png" alt="about-section-burger" class="h-[300px]">
+
+            </div>
+        </div>
+    </section>
+
+    <br> <br> <br> <br> <br>
+    <!-- Menu Section -->
+    <section class="w-[100%] flex justify-center items-center hero-section" id="menu-section">
+        <div>
+            <h1 class="font-bold text-6xl text-center text-white">Menu</h1> <br> <br> <br>
+            <div class="menu-section">
+                <!-- Menu Card -->
+
+                <!-- Card 1 -->
+                <div
+                    class="menu-card h-[275px] w-[250px] bg-white text-black rounded-4xl flex flex-col justify-center items-center">
+                    <!-- Image -->
+                    <img src="/images/veg-burger.png" alt="veg-burger" class="h-[200px] text-center">
+                    <!-- Name & $Price -->
+                    <h2 class="text-3xl font-bold text-yellow-300">Veg Burger</h2>
+                    <h3 class="text-2xl font-semibold">$3</h3>
+                </div>
+
+
+                <!-- Card 2 -->
+                <div
+                    class="menu-card h-[275px] w-[250px] bg-white text-black rounded-4xl flex flex-col justify-center items-center">
+                    <!-- Image -->
+                    <img src="/images/cheese.png" alt="chicken-burger" class="h-[200px] text-center">
+                    <!-- Name & $Price -->
+                    <h2 class="text-3xl font-bold text-yellow-300">Cheese Burger</h2>
+                    <h3 class="text-2xl font-semibold">$3.7</h3>
+                </div>
+
+                <!-- Card 3 -->
+                <div
+                    class="menu-card h-[275px] w-[250px] bg-white text-black rounded-4xl flex flex-col justify-center items-center">
+                    <!-- Image -->
+                    <img src="/images/chicken-burger.webp" alt="chicken-burger" class="h-[200px] text-center">
+                    <!-- Name & $Price -->
+                    <h2 class="text-3xl font-bold text-yellow-300">Chicken Burger</h2>
+                    <h3 class="text-2xl font-semibold">$4.5</h3>
+                </div>
+
+                <!-- Card 4 -->
+                <div
+                    class="menu-card h-[275px] w-[250px] bg-white text-black rounded-4xl flex flex-col justify-center items-center">
+                    <!-- Image -->
+                    <img src="/images/beef-burger.png" alt="beef-burger" class="h-[150px] text-center">
+                    <!-- Name & $Price -->
+                    <h2 class="text-3xl font-bold text-yellow-300">Beef Burger</h2>
+                    <h3 class="text-2xl font-semibold">$5.75</h3>
+                </div>
+
+                <!-- Card 5 -->
+                <div
+                    class="menu-card h-[275px] w-[250px] bg-white text-black rounded-4xl flex flex-col justify-center items-center">
+                    <!-- Image -->
+                    <img src="/images/ham-burger.png" alt="ham-burger" class="h-[200px] text-center">
+                    <!-- Name & $Price -->
+                    <h2 class="text-3xl font-bold text-yellow-300">Ham Burger</h2>
+                    <h3 class="text-2xl font-semibold">$4.5</h3>
+                </div>
+
+                <!-- Card 6 -->
+                <div
+                    class="menu-card h-[275px] w-[250px] bg-white text-black rounded-4xl flex flex-col justify-center items-center">
+                    <!-- Image -->
+                    <img src="/images/superstar-burger.png" alt="superstar-burger" class="h-[200px] text-center">
+                    <!-- Name & $Price -->
+                    <h2 class="text-3xl font-bold text-yellow-300">Super Burger</h2>
+                    <h3 class="text-2xl font-semibold">$10</h3>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <br> <br> <br> <br> <br> <br> <br> <br> <br>
+
+    <!-- Contact Section -->
+
+    <section class="w-[100%] flex justify-center items-center hero-section bg-black text-center" id="contact-section">
+        <div>
+            <div class="text-white p-[50px] flex flex-col md:flex-row gap-[150px]">
+
+                <!-- Link & Summary & Terms -->
+                <div>
+                    <div class="flex flex-col md:flex-row-reverse gap-[100px]">
+                        <!-- Opening Time -->
+                        <div>
+                            <h4 class="text-xl font-bold">Opening Time</h4> <br>
+                            <h5 class="opacity-90">Monday - Friday <br>
+                                9:00am - 11:00pm <br>
+                                34 Trioa Road, Las Vegas
+                            </h5>
+                        </div>
+
+                        <!-- Link & Number -->
+                        <div class="gap-3 flex flex-col">
+                            <!-- Gmail -->
+                            <a href="mailto:vegibun12@gmail.com">
+                                <div
+                                    class="flex justify-center gap-2 items-center bg-white rounded-4xl text-black p-[10px]">
+                                    <img src="/images/envelope-solid.svg" alt="Gmail" class="h-[15px]">
+                                    <p>Gmail</p>
+                                </div>
+                            </a>
+
+
+                            <!-- Contact Number -->
+                            <a href="tel:+1234567890">
+                                <div
+                                    class="flex justify-center gap-2 items-center bg-white rounded-4xl text-black p-[10px]">
+                                    <img src="/images/phone-logo.svg" alt="Contact Number" class="h-[15px]">
+                                    <p>Call Us</p>
+                                </div>
+                            </a>
+
+                            <!-- Facebook -->
+                            <a href="https://www.facebook.com/vegibun12" target="_blank">
+                                <div
+                                    class="flex justify-center gap-2 items-center bg-white rounded-4xl text-black p-[10px]">
+                                    <img src="/images/facebook-brands.svg" alt="Facebook" class="h-[15px]">
+                                    <p>Facebook</p>
+                                </div>
+                            </a>
+
+
+                            <!-- Twiter or X -->
+                            <a href="https://www.facebook.com/vegibun12" target="_blank">
+                                <div
+                                    class="flex justify-center gap-2 items-center bg-white rounded-4xl text-black p-[10px]">
+                                    <img src="/images/x-twitter-brands.svg" alt="X" class="h-[15px]">
+
+                                </div>
+                            </a>
+
+
+                        </div>
+
+
+                    </div>
+                </div>
+                <!-- Contact Form -->
+                <div class="flex flex-col">
+                    <h2 class="text-4xl">Contact Us</h2> <br>
+                    <form action="https://getform.io/f/bxoyevla" method="POST" class="flex flex-col gap-4">
+                        <input type="text" name="name" required class="bg-gray-800 p-2 rounded-xl"
+                            placeholder="Full Name">
+                        <input type="email" name="email" required class="bg-gray-800 p-2 rounded-xl"
+                            placeholder="Email">
+                        <input type="text" name="message" required class="bg-gray-800 p-9 rounded-xl"
+                            placeholder="Enter your messege">
+                        <button type="submit" class="form-btn p-2 rounded-2xl">Send</button>
+                    </form>
+                </div>
+            </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class=" bg-gray-900 text-gray-400 text-center">
+        <p class="p-5">Copyright © 2025 | VeggieiBun | All Right Reserved</p>
+    </footer>
+
+
+    <script src="/src/script.js"></script>
+</body>
+
+</html>

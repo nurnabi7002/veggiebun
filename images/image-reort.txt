@@ -1,0 +1,2 @@
+There are many images in the site but they are not optimized and not copressed, 
+so thats why i can't add to github. Go to the live netlify link from decs and download the images and logo svg's!

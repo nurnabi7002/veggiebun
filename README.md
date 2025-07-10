@@ -23,29 +23,28 @@ This is my **first PSD to Tailwind CSS** conversion project made for practice an
 
 ---
 
-## 📁 Project Structure
-
+```
 project/
 │
 ├── index.html
 │
 ├── src/
-│ ├── input.css ← Tailwind directives
-│ ├── style.css ← Custom styling
-│ └── script.js ← JS interactions (e.g., sidebar toggle)
+│   ├── input.css        ← Tailwind directives
+│   ├── style.css        ← Custom styling
+│   └── script.js        ← JS interactions (e.g., sidebar toggle)
 │
 ├── dist/
-│ └── output.css ← Compiled Tailwind CSS
+│   └── output.css       ← Compiled Tailwind CSS
 │
 ├── images/
-│ └── bg.jpg, logo.png ← All project images
+│   └── bg.jpg, logo.png ← All project images
 │
 ├── assets/
-│ └── Poppins-Medium.ttf ← Custom font used in the project
+│   └── Poppins-Medium.ttf ← Custom font used in the project
 │
-├── tailwind.config.js ← Tailwind config file
-└── README.md ← Project description
-
+├── tailwind.config.js   ← Tailwind config file
+└── README.md            ← Project description
+```
 
 ---
 
